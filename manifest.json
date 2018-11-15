@@ -1,0 +1,13 @@
+{
+  "name": "Smooth News",
+  "version": "1.0",
+  "description": "Read the news without annoying paywalls",
+  "permissions": ["*://*.nytimes.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.nytimes.com/*"],
+      "js": ["news.js"]
+    }
+  ],
+  "manifest_version": 2
+}
